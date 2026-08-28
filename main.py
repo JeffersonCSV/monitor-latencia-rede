@@ -46,4 +46,9 @@ def executar_monitoramento():
     print("-" * 50)
 
 if __name__ == "__main__":
-    executar_monitoramento()
+    try:
+        while True:
+            executar_monitoramento()
+            time.sleep(1)  # <--- ALTERE AQUI
+    except KeyboardInterrupt:
+        print("\n\n🛑 Monitoramento encerrado pelo usuário.")

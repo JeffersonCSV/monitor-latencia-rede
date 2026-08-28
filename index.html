@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Network Latency & Status Monitor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📡 Network Latency & Status Monitor</h1>
+            <p>Projeto Acadêmico - Análise e Desenvolvimento de Sistemas</p>
+        </header>
+
+        <section class="grid-status">
+            <div class="card online">
+                <h3>DNS Google (8.8.8.8)</h3>
+                <span class="badge">ONLINE</span>
+                <p class="latencia">Latência: <strong>18.4 ms</strong></p>
+            </div>
+
+            <div class="card online">
+                <h3>DNS Cloudflare (1.1.1.1)</h3>
+                <span class="badge">ONLINE</span>
+                <p class="latencia">Latência: <strong>12.1 ms</strong></p>
+            </div>
+
+            <div class="card offline">
+                <h3>Host Local (127.0.0.1)</h3>
+                <span class="badge-offline">OFFLINE / TIMEOUT</span>
+                <p class="latencia">Latência: <strong>0 ms</strong></p>
+            </div>
+        </section>
+
+        <footer>
+            <p>Desenvolvido por <strong>Jefferson Jonathan</strong></p>
+        </footer>
+    </div>
+</body>
+</html>
